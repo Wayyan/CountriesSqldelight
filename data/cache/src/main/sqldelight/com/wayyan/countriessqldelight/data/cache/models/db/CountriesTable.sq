@@ -1,0 +1,15 @@
+CREATE TABLE CountriesTable (
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+name TEXT NOT NULL,
+currency TEXT NOT NULL,
+isCountry INTEGER DEFAULT 0
+);
+
+insert{
+INSERT INTO CountriesTable(name,currency,isCountry)
+VALUES(:name,:currency,:isCountry);
+}
+
+selectAll:
+SELECT *
+FROM CountriesTable;

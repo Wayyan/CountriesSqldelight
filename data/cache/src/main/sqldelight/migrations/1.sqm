@@ -1,0 +1,2 @@
+ALTER TABLE CountriesTable
+ADD COLUMN isCountry INTEGER DEFAULT 0;
